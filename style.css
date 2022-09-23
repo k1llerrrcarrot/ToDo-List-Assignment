@@ -1,0 +1,96 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin-left: 300px;
+}
+
+h1 {
+  margin-left: 40px;
+}
+
+.new-task-input {
+  display: flex;
+  margin-left: 105px;
+  height: 40px;
+}
+.new-task-input #task-input {
+  max-width: 700px;
+  width: 80%;
+  padding-left: 10px;
+}
+.new-task-input #add-btn {
+  height: 40px;
+  width: 60px;
+  color: white;
+  background-color: #467AB2;
+  border: none;
+}
+.new-task-input #add-btn:hover {
+  background-color: #8aa4c0;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+
+ul {
+  padding: 20px;
+}
+ul li {
+  list-style: none;
+  margin-bottom: 10px;
+  padding: 0 15px 0 15px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  transition-duration: 150ms;
+  transition-property: background;
+  transition-timing-function: ease-in-out;
+}
+ul li:hover {
+  background-color: lightblue;
+}
+ul li .task-check {
+  margin-right: 45px;
+}
+ul li .task-text {
+  display: inline;
+  flex-grow: 1;
+  cursor: pointer;
+}
+ul li .task-text.editing {
+  display: none;
+}
+ul li .task-text.done {
+  text-decoration: line-through;
+  color: gray;
+}
+ul li .edit-input {
+  flex-grow: 1;
+  height: 33px;
+}
+ul li .edit-input:focus-visible {
+  outline: 0;
+}
+ul li button {
+  height: 39px;
+  width: 75px;
+  color: white;
+  background-color: #467AB2;
+  border: none;
+}
+ul li button:hover {
+  background-color: #8aa4c0;
+  transition-property: background;
+  transition-duration: 250ms;
+  transition-timing-function: ease-in-out;
+}
+ul li .task-delete {
+  height: 16px;
+  width: 16px;
+  margin-left: 20px;
+}
+ul li .task-delete:hover {
+  cursor: pointer;
+}/*# sourceMappingURL=style.css.map */
